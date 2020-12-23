@@ -4,6 +4,11 @@
 
 #### By _**Alex Goodwin**_
 
+## Other Repos Used for Development
+Deployed using current repo due to rails issues
+Majority of work done [here](https://github.com/hagoodwi92/covid-19-capstone)
+Also worked on a React version [here] (https://github.com/hagoodwi92/covid-19-tracker-react)
+
 ## Technologies Used
 
 * Ruby
