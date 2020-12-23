@@ -5,9 +5,9 @@
 #### By _**Alex Goodwin**_
 
 ## Other Repos Used for Development
-Deployed using current repo due to rails issues
-Majority of work done [here](https://github.com/hagoodwi92/covid-19-capstone)
-Also worked on a React version [here](https://github.com/hagoodwi92/covid-19-tracker-react)
+* Deployed using current repo due to rails issues
+* Majority of work done [here](https://github.com/hagoodwi92/covid-19-capstone)
+* Also worked on a React version [here](https://github.com/hagoodwi92/covid-19-tracker-react)
 
 ## Technologies Used
 
@@ -16,9 +16,9 @@ Also worked on a React version [here](https://github.com/hagoodwi92/covid-19-tra
 * [HighCharts](https://www.highcharts.com/)
 * [The Covid Tracking Project API](https://covidtracking.com/data/api)
 * HttParty
-* [Heroku for deployment] (project link)
+* [Heroku for deployment](https://infinite-beyond-85616.herokuapp.com/chart)
 
-Attempted to implement this in React. Repo here: https://github.com/hagoodwi92/covid-19-tracker-react. 
+Attempted to implement this in React. [Repo here:](https://github.com/hagoodwi92/covid-19-tracker-react). 
 
 Instead, I will implement this in Ruby/Rails as originally planned, and if I have time I will add rails-react for advanced styling. 
 
