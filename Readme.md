@@ -7,13 +7,13 @@
 ## Other Repos Used for Development
 Deployed using current repo due to rails issues
 Majority of work done [here](https://github.com/hagoodwi92/covid-19-capstone)
-Also worked on a React version [here] (https://github.com/hagoodwi92/covid-19-tracker-react)
+Also worked on a React version [here](https://github.com/hagoodwi92/covid-19-tracker-react)
 
 ## Technologies Used
 
 * Ruby
 * Sinatra with Thin
-* [HighCharts] (https://www.highcharts.com/)
+* [HighCharts](https://www.highcharts.com/)
 * [The Covid Tracking Project API](https://covidtracking.com/data/api)
 * HttParty
 * [Heroku for deployment] (project link)
