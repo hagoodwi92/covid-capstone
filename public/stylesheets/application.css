@@ -10,6 +10,8 @@ h2{
 
 #table-div {
   text-align: center;
+  display: none;
+  color: white;
 }
 
 
@@ -27,6 +29,6 @@ h2{
 }
 
  .stats {
-  text-align: center;
+  display: none;
 }
 
