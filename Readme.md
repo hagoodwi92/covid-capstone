@@ -1,39 +1,94 @@
 # _Covid-19 Tracker_
 
-#### _A ruby application that uses an API to get current Covid data and display it in a dynamic chart and map.
+#### A ruby application that uses an API to get current Covid data and display it in a dynamic chart and map.
 
-#### By _**{List of contributors}**_
+#### By _**Alex Goodwin**_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* Ruby
+* Sinatra with Thin
+* [HighCharts] (https://www.highcharts.com/)
+* [The Covid Tracking Project API](https://covidtracking.com/data/api)
+* HttParty
+* [Heroku for deployment] (project link)
 
-## Description
+Attempted to implement this in React. Repo here: https://github.com/hagoodwi92/covid-19-tracker-react. 
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+Instead, I will implement this in Ruby/Rails as originally planned, and if I have time I will add rails-react for advanced styling. 
+
+## Initial Goals
+
+Provide users with daily COVID outbreak reports. Stretch goals include displaying an outbreak map, as well as including other criteria to avoid states.
+
+* MVP  
+Receive daily COVID cases by state from an outside source
+
+Compare states total COVID cases per day to determine hotspots(criteria TBD)
+
+For example, the criteria could be a threshold of daily cases determines a hotspot. TBD
+
+* User Stories:
+
+A user should be able to visit the homepage and see a list of states to avoid based on daily COVID case levels. 
+
+# Stretch Goals/Future
+
+* All 50 states in the bar graph, daily new deaths - done
+
+* search funtion to find a state, with state map even! - done
+
+* A chart with data - done 
+
+* A map of the U.S. that shows outbreak rates by color - done
+
+* multiple states: avoid a state when it meets 3 criteria: bad covid rates, violence, bad weather, etc. avoid this state if meets criteria- future
+
+* make account, add your states to track. daily email- future
+
+* home page with cdc mask guidelines, video from fauci etc- not needed
+
+* A state map of Oregon showing daily outbreak rates by county- need api for county
+
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone this repository using 'git clone <https://github.com/hagoodwi92/covid-capstone.git>'
+* Either 'cd covid-capstone' into the root, then 'code .', OR
+* Open in VSCode or editor of your choice.
+* Run 'bundle i' in the root directory
+* 'ruby app.rb' starts the server using Sinatra
+* Navigate to correct port using desired web browser
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+
+
+## Research
+
+https://www.highcharts.com/docs/maps/map-collection
+
+https://www.highcharts.com/demo/maps/color-axis
+
+https://www.highcharts.com/blog/posts/frameworks/ruby-on-rails/
+
+https://www.highcharts.com/docs/maps/getting-started
+
+https://www.highcharts.com/docs/getting-started/your-first-chart
+
+https://www.highcharts.com/docs/maps/map-collection
+
+https://github.com/reactjs/react-rails
+
+https://react-bootstrap.github.io/
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* The API sometimes displays 0 or negative results. 
+
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_MIT License_
 
 ## Contact Information
 
-_{Add your contact information here.}_
+_hagoodwi@gmail.com_
