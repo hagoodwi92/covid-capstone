@@ -52,7 +52,7 @@
   <div class="col-sm">
   <div class="card">
   <div class="card-body">
-    <h4>New U.S. Deaths Today:</h2><p><%= @usDeaths.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %></p>
+    <h4>New U.S. Deaths Today:</h2><p><%= @us.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %></p>
   </div>
   </div>
 </div>
@@ -60,7 +60,7 @@
     <div class="col-sm">
     <div class="card">
   <div class="card-body">
-  <% @deathsPerMin = (@usDeaths/1440) %>
+  <% @deathsPerMin = (@us/1440) %>
   <h4>Deaths per minute: U.S. </h4><p><%= @deathsPerMin %></p>
   </div
   </div>

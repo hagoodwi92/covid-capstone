@@ -60,7 +60,7 @@ get('/') do
 
   @usCases = covid.get_us
   @update = covid.update
-  @usDeaths = covid.us_death
+  @us = covid.us_death
   erb(:covid)
 end
 

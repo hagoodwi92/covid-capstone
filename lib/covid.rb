@@ -8,30 +8,30 @@ class Covid
   end
 
   def searchPos(search)
-    response = HTTParty.get("https://api.covidtracking.com/v1/states/#{search}/current.json")
-    response ['positiveIncrease']
+    response = HTTParty.get("https://corona.lmao.ninja/v2/states/#{search}?yesterday=true")
+    response ['todayCases']
   end
 
   def searchDeaths(search)
-    response = HTTParty.get("https://api.covidtracking.com/v1/states/#{search}/current.json")
-    response ['deathIncrease']
+    response = HTTParty.get("https://corona.lmao.ninja/v2/states/#{search}?yesterday=true")
+    response ['todayDeaths']
   end
 
   
   def get_us
-    response = HTTParty.get('https://api.covidtracking.com/v1/us/current.json')
-    response [0]['positiveIncrease'] 
+    response = HTTParty.get('https://corona.lmao.ninja/v2/countries/usa?yesterday=true&strict=false&query')
+    response ['todayCases'] 
   end
 
   def update
-    response = HTTParty.get('https://api.covidtracking.com/v1/us/current.json')
-    response [0]['dateChecked']
-  end
-  def us_death
-    response = HTTParty.get('https://api.covidtracking.com/v1/us/current.json')
-    response [0]['deathIncrease'] 
+    response = HTTParty.get('https://corona.lmao.ninja/v2/countries/usa?yesterday=true&strict=false&query')
+    response ['updated']
   end
 
+  def us_death
+    response = HTTParty.get('https://corona.lmao.ninja/v2/countries/usa?yesterday=true&strict=false&query')
+    response ['todayDeaths'] 
+  end
 
   def al
     response = HTTParty.get('https://corona.lmao.ninja/v2/states/alabama')
